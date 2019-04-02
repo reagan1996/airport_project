@@ -13,3 +13,6 @@ class Terminal:
 terminal1 = Terminal("id1", "T1", "Gatwick")   # airport1
 terminal1.add_flights("BNY656") # flight1
 print(terminal1.flights)
+
+
+'this is a change'
