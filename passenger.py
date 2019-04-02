@@ -1,7 +1,5 @@
 class Passenger:
-
-
-    def __init__(self, first_name, last_name, flight, age):
+    def __init__(self, first_name, last_name, age, flight = ""):
         self.passenger_first_name = first_name
         self.passenger_last_name = last_name
         self.flight = flight
