@@ -10,6 +10,10 @@ class Airport:
     def welcome_message(self):
         print("Welcome to ", self.airport_name, " Airport." )
 
+    def see_flights(self):
+        for terminal in self.terminal:
+            for flights in terminal.flights:
+                print(flights.index(), flights.destination, flights.date)
 
 
 
