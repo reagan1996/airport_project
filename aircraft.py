@@ -4,6 +4,6 @@ class Aircraft:
         self.flight = []
 
     def add_flight(self, flight):
-        self.flight = flight
+        self.flight.append(flight)
 
 
