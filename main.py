@@ -1,10 +1,11 @@
-# from airport import Airport
-# from terminal import Terminal
-# from flight import Flight
-# from aircraft import Aircraft
-# from helicopter import Helicopter
-# from plane import Plane
-# from passenger import Passenger
+from airport import Airport
+from terminal import Terminal
+from flight import Flight
+from aircraft import Aircraft
+from helicopter import Helicopter
+from plane import Plane
+from passenger import Passenger
+from stored_data import *
 
 # airport1.welcome_message()
 
@@ -19,15 +20,17 @@ answer = input("What would you like to do?")
 
 if answer == '1':
     print("Okay, proceed booking a flight now:")
-    first_passenger_name = input("What is passenger name?")
-    second_passenger_name = input("What is passenger surname?")
+    passenger_first_name = input("What is passenger name?")
+    passenger_last_name = input("What is passenger surname?")
     passenger_age = input("What is the age of passenger?")
-
 
     if passenger_age < str(18):
         print("Passenger is not old enough to book a flight")
     else:
+        new_passenger = Passenger(passenger_first_name, passenger_last_name, passenger_age)
         print("Proceed. Which flight would you like?")
+
+
 
 # get user input
 # save to variables
