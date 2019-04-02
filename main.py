@@ -43,9 +43,6 @@ elif answer == '2':
     print("All passengers in a flight: ")
     which_flight = input()
 
-
-
-    if
 elif answer == '3':
     print("All flights in a terminal: ")
 elif answer == '4':
