@@ -1,9 +1,9 @@
 class Flight:
-    def __init__(self, flight_number, aircraft = "", destination, terminal, date, cancelled = False ):
+    def __init__(self, flight_number, destination, date, cancelled = False, aircraft = "" ):
         self.flight_number = flight_number
         self.aircraft = aircraft
         self.destination = destination
-        self.terminal = terminal
+        self.terminal = ""
         self.passengers = []
         self.date = date
         self.cancelled = cancelled
@@ -16,3 +16,7 @@ class Flight:
 
     def cancel_flight(self):
         self.cancelled = True
+
+    def add_terminal(self,terminal):
+        self.terminal = terminal
+        terminal.flights.append(self)
